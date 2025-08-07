@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A multi-section web page demonstrating lists, tables, media, and a form." />
+  <title>Enhancing HTML5 Content & Mastering Forms</title> 
+</head>
 
+<body>
+
+<header>
+  <h1><p>Using HTML5 semantic elements, lists, tables, media, and forms</p></h1>
+</header>
+
+<main>
+  <!-- Section 1: Features as a list -->
+  <section>
+    <h2> Types of Media</h2>
+    <ul>
+      <li>Television</li>
+      <li>Social Media</li>
+      <li>Radio</li>
+      <li>News Paper</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Pricing Table</h2>
+    <table border="3">
+      <thead>
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Type</th>
+            <th>Model</th>
+            <th>Price</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Phone</td>
+          <td>Smartphone</td>
+          <td>Tecno</td>
+          <td>9000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Television</td>
+          <td>Smart TV</td>
+          <td>LG</td>
+          <td>20000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Television</td>
+          <td>CRT TV</td>
+          <td>Sony</td>
+          <td>5000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media-->
+
+  <section>
+    <h2> Media</h2>
+    <video controls width="400" pause>
+        <source src="https://www.youtube.com/shorts/GQW92UgPbLQ" type="video/mp4" >
+        Video about smart Watches
+    </video>
+
+
+</section>
+  <!-- Section 3: Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your name" required minlength="3">
+        <br>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        <br>
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" name="phone" pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+251000000000">
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{5,15}" placeholder="5–15 letters, numbers, or underscores">
+        <br>
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6">
+        <br>
+        <label for="confirm-password">Confirm Password *</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="plan">Choose Device</label>
+        <select>
+          <option value="">-- Please select --</option>
+          <option value="Television">Television</option>
+          <option value="Smartphone">Smartphone</option>
+          <option value="Watches">Watches</option>
+        </select>
+        <br>
+        <label for="bio">Please write a comment</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Your short bio..."></textarea>
+        <br>
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions *
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Sample Web Page. $copy rights reserved.</p>
+</footer>
+
+</body>
+</html>
